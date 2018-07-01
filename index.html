@@ -5,15 +5,24 @@
     </head>
     <body>
         <template id="homeTmp">
-            This is the home page route
+            This is the home page route.
+            Welcome to the {{pageName}} page!
+            You can also visit <a href="#{{aboutUsRouteLink}}"> {{aboutUsRouteName}} </a> and <a href="#{{contactUsRouteLink}}">{{contactUsRouteName}}</a>
         </template>
         <template id="contactTmp">
             This is the contact us page route
+            Welcome to the {{pageName}} page!
+            Click here to go <a href="#{{homeRouteLink}}">{{homeRouteName}}</a>
         </template>
         <template id="aboutTmp">
             This is the about us page route
+            Welcome to the {{pageName}} page!
+            Click here to go <a href="#{{homeRouteLink}}">{{homeRouteName}}</a>
         </template>
-        <div id="routerOutlet"></div>
+        <div id="routerOutlet">
+            Welcome to the Router application. This is the base page without routes.
+            Click here to start <a href="#home">Home</a>
+        </div>
         <script type="text/javascript" src="router.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
